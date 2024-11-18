@@ -67,20 +67,17 @@ var prevsquote ;
 function quoteClick() {
     var quoteNum = Math.floor(Math.random() * 10);
     if (prevsquote && prevsquote !== quoteNum) {
-        alert(quoteNum +' '+ prevsquote);
         quoteHtml.innerHTML = `
         <p class=" mt-4 w-lg-50 w-100">"${quote[quoteNum].quote}"</p>
         <p class=" mt-4 w-lg-50 w-100">-- ${quote[quoteNum].auth}</p>
     `;
     } else if (prevsquote && prevsquote == quoteNum) {
         quoteNum = Math.floor(Math.random() * 10);
-        alert(quoteNum + ' else if ' + prevsquote);
         quoteHtml.innerHTML = `
         <p class=" mt-4 w-lg-50 w-100">"${quote[quoteNum].quote}"</p>
         <p class=" mt-4 w-lg-50 w-100">-- ${quote[quoteNum].auth}</p>
     `;
     } else {
-        alert(quoteNum + ' ' + prevsquote);
         quoteHtml.innerHTML = `
         <p class=" mt-4 w-lg-50 w-100">"${quote[quoteNum].quote}"</p>
         <p class=" mt-4 w-lg-50 w-100">-- ${quote[quoteNum].auth}</p>
