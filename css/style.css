@@ -1,0 +1,21 @@
+  p {
+      font-family: initial !important;
+      font-size: 35px;
+  }
+
+  h1 {
+      font-size: 80px;
+      font-family: Impact;
+      color: #000;
+  }
+
+  button {
+      background-color: blue;
+      color: #fff;
+      width: 250px;
+      height: 80px;
+  }
+
+  button:hover {
+      background-color: green;
+  }
